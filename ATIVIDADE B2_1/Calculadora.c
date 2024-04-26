@@ -59,11 +59,15 @@
         }
 
         char resposta[1];
-      
-        printf("\n\nDeseja fazer um novo calculo? (S/N): ");
+
+        printf("\n\nDeseja parar de fazer os calculos? (S/N): ");
         scanf("%s", resposta);
 
-        while(strcmp(resposta, "S") == 0){
+        while(strcmp(resposta, "N") == 0){
+        main();
+          return 0;
+        }
+        while(strcmp(resposta, "n") == 0){
         main();
           return 0;
         }
