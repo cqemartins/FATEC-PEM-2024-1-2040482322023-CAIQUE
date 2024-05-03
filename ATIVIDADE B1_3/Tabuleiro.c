@@ -30,7 +30,7 @@ void addPecas(char tabuleiro[8][8][caracteres]) {
         strcpy(tabuleiro[1][i], "pP");
         strcat(tabuleiro[1][i], num);
     }
-  
+
     strcpy(tabuleiro[7][0], "TB1");
     strcpy(tabuleiro[7][1], "CB2");
     strcpy(tabuleiro[7][2], "BB3");
@@ -50,8 +50,10 @@ void addPecas(char tabuleiro[8][8][caracteres]) {
 }
 
 void Tabuleiro(char tabuleiro[8][8][caracteres]) {
+    printf("  -a- -b- -c- -d- -e- -f- -g- -h-\n");
     for (int i = 0; i < 8; i++) 
     {
+      printf("%d|", i+1);
         for (int j = 0; j < 8; j++) 
         {
             printf("%s ", tabuleiro[i][j]);
